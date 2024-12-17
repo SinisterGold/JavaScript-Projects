@@ -1,9 +1,9 @@
-* {box-sizing: border-box;}
+* {box-sizing: border-box;} /* border-box tells the browser to account for any border and padding in the values you specify for an element's width and height. If you set an element's width to 100 pixels, that 100 pixels will include any border or padding you added, and the content box will shrink to absorb that extra width. */
 
 /* Slideshow container */
 .slideshow-container {
     max-width: 1000px;
-    position: relative;
+    position: relative; /* The element is positioned according to the normal flow of the document, and then offset relative to itself based on the values of top, right, bottom, and left */
     margin: auto;
 }
 
@@ -15,15 +15,15 @@
 /* Next & previous buttons */
 .prev, .next {
     cursor: pointer;
-    position: absolute;
+    position: absolute; /* The element is removed from the normal document flow, and no space is created for the element in the page layout.*/
     top: 50%;
     width: auto;
     margin-top: -22px;
-    padding: 16px;
+    padding: 16px; /* space between content and its border */
     color: white;
     font-weight: bold;
     font-size: 18px;
-    transition: 0.6s ease;
+    transition: 0.6s ease; /* controls how long it takes the "next" and "prev" icons to become highlighted when moused over */
     border-radius: 0 3px 3px 0;
     user-select: none;
 }
