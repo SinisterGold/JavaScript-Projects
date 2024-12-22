@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="en">
+        <script src="JS/main.js" async></script>
+    </head>
+    <body>
+        <h1 class="Click">This text will change!</h1>
+        <h3 class="Click">This text will not change.</h3>
+        <button onclick="Hello_World()">Click Me!</button>
+        <canvas id="IUD_Name" width="500" height="250"></canvas>
+        <canvas id="ID_Name" width="500" height="250" style="border: 5px solid black;"></canvas>
+        <canvas id="myCanvas" width="200" height="100" style="border: 2px dotted black;"></canvas>
+        <canvas id="myCan" width="300" height="150" style="border:1px solid black"></canvas>
+
+        <ol>
+            <li data-family_relation="father">Mark</li>
+            <li data-family_relation="mother">Kelly</li>
+            <li data-family_relation="sister">Maxine</li>
+        </ol>
+        
+        <h1>Characters</h1>
+        <h3>Click on a universe to see a charater!</h3>
+
+        <ul>
+            <li onclick="displayType(this)" id="DC" data-character="Batman">DC</li>
+            <li onclick="displayType(this)" id="Star Wars" data-character="Darth Vader">Star Wars</li>
+            <li onclick="displayType(this)" id="Marvel" data-character="Scarlet Witch">Marvel</li>
+            <li onclick="displayType(this)" id="Star Trek" data-character="Jean-Luc Picard">Star Trek</li>
+        </ul>
+
+        <p id="displayAge"></p>
+        <button onclick="myFunction()">Click Me!</button>
+    </body>
+</html>
