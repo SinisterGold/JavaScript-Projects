@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script> <!--jQuery Server-->
     </head>
     
     <script>
-        $(document).ready(function(){
-            $("html").append(
+        $(document).ready(function(){ //This is saying when the webpage is read run this function
+            $("html").append( //.append means to add element to that element int his case html
                 "<body>\
                     <div id='container'>\
                         <div id='inner'>\
@@ -18,8 +18,8 @@
                     </div>\
                 </body>"
             );
-            $("#2").css({"color":"red"});
-            $("#3").click(function() {
+            $("#2").css({"color":"red"});    //this is jquery css that target p element with id 2 and changes color to red
+            $("#3").click(function() {      //This function targets p elementt with id 3 and when clicked will hidse the h1 element
                 $("h1").hide();
             });
         });
@@ -27,3 +27,4 @@
 
     </script>
 </html>
+
