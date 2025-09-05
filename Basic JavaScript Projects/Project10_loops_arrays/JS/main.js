@@ -1,12 +1,22 @@
-function Call_Loop() {
-    var Digit = "";
-    var counter = 1;
-    while (X < 11) {
-        Digit +="<br>" + counter;
-        X++;
+function FizzBuzz() {
+    let output = "";
+    for (let i =1; i <= 100; i++) {
+        if(i%3===0 && i%5===0) {
+            output += "FizzBuzz<br>";
+        }
+        else if (i%3===0) {
+            output +="Fizz<br>";
+        }
+        else if (i%5===0) {
+            output +="Buzz<br>";
+        }
+        else {
+            output += i + "<br>";
+        }
     }
-    document.getElementById("Loop").innerHTML = Digit;
+    document.getElementById("Loop").innerHTML = output;
 }
+
 
 function length_function() {
     var string = document.getElementById("string").textContent; //.textContent gets the content within the id and saves it
