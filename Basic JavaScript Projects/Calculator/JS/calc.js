@@ -1,13 +1,14 @@
-function appendToResult(value) {
-    document.getElementById('result').value += value;
+const resultField = document.getElementById('result');
+
+function appendToResult(input) {
+    resultField.value += input;
 }
 
 function clearResult() {
-    document.getElementById('result').value = '';
+    resultField.value = '';
 }
 
 function calculateResult() {
-    const resultField = document.getElementById('result');
     try {
         resultField.value = eval(resultField.value);
     } catch (error) {
